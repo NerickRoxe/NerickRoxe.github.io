@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="titulo">COMPUTACION EN LA NUBE</h1>
+        <nav class="Nombre">Nerick Emanuel Jimenez Juarez 604-A</nav>
+    </header>
+
+    <div class="contenedor">
+        <div class="item">
+            <h2>Conceptos Generales</h2>
+            <div class="content">
+                <img src="imagenes/imagen1.jpg" alt="">
+                <div class="text">
+                    <p>La computación en la nube es la disponibilidad a pedido de los recursos de procesamiento como los
+                        servicios por Internet. Elimina la necesidad de que las empresas obtengan, configuren o
+                        administren recursos por su cuenta; de esta forma, solo paguen por lo que usan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Tipos de Servicios en la Nube</h2>
+            <div class="content">
+                <img src="imagenes/imagen2.jpg" alt="">
+                <div class="text">
+                    <p>Los tres tipos principales de computación en la nube son la nube pública, la privada y la
+                        híbrida. Dentro
+                        de estos modelos de implementación, hay cuatro servicios principales: infraestructura como
+                        servicio
+                        (IaaS), plataforma como servicio (PaaS), software como servicio (SaaS) y computación sin
+                        servidores.
+
+                        <h3>Plataforma como servicio (PaaS):</h3>
+
+                        Ofrece acceso bajo demanda a los servicios de
+                        infraestructura de TI, incluidos el procesamiento, el almacenamiento, las herramientas de redes y la
+                        virtualización.
+                        Proporciona el nivel más alto de control sobre tus recursos de TI y se asemeja más a los
+                        recursos de TI locales tradicionales.
+
+                        <h3>Plataforma como servicio (PaaS):</h3>
+
+                        ofrece todos los recursos de hardware y software necesarios
+                        para el desarrollo de aplicaciones en la nube. Con PaaS, las empresas pueden enfocarse por completo en
+                        el desarrollo de aplicaciones sin la carga de administrar y mantener la infraestructura subyacente.
+
+                        <h3>Software como servicio (SaaS):</h3>
+
+                        proporciona una pila de aplicaciones completa como servicio,
+                        desde la infraestructura subyacente hasta el mantenimiento y las actualizaciones del software de la app.
+                        Una solución de SaaS suele ser una aplicación de usuario final, en la que el proveedor de servicios
+                        en la nube administra y mantiene la infraestructura y el servicio.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Patrones de Diseño</h2>
+            <div class="content">
+                <img src="imagenes/imagen3.jpg" alt="">
+                <div class="text">
+                    <p>
+                        <h3>Microservicios</h3>
+
+                        Los microservicios son un enfoque arquitectónico y organizativo para el desarrollo de software
+                        donde el software está compuesto por pequeños servicios independientes que se comunican a través
+                        de API bien definidas. Los propietarios de estos servicios son equipos pequeños independientes.
+                        (AWS, 2023)
+
+                        <h3>Cache Distribuido</h3>
+
+                        Una memoria caché proporciona acceso de alto rendimiento y baja latencia a los datos de la
+                        aplicación a los que se accede habitualmente, ya que almacena los datos en memoria. Para una
+                        aplicación en la nube, el tipo de caché más útil es la caché distribuida, lo que significa que
+                        los datos no se almacenan en la memoria del servidor web individual, sino en otros recursos en
+                        la nube, y los datos almacenados en caché están disponibles para todos los servidores web de una
+                        aplicación (u otras máquinas virtuales en la nube que usa la aplicación). (microsoft, 2024)
+
+                        <h3>Cola de Mensaje</h3>
+
+                        Una cola de mensajes es una forma de comunicación asíncrona de servicio a servicio que se usa en
+                        arquitecturas de microservicios y sin servidor. Los mensajes se almacenan en la cola hasta que
+                        se procesan y eliminan. Cada mensaje se procesa una vez sola, por un solo consumidor. Las colas
+                        de mensajes pueden se pueden utilizar para desacoplar procesos pesados, para proporcionar un
+                        búfer o agrupar el trabajo y suavizar cargas de trabajo con picos. (AWS, 2024)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Estándares en Servicios</h2>
+            <div class="content">
+                <img src="imagenes/imagen4.jpg" alt="">
+                <div class="text">
+                    <p>
+                        <h3>REST</h3>
+
+                        deriva de “REpresentational State Transfer”, que traducido significaría “Transferencia de
+                        representación de estado”. Un servicio REST no posee estado, he de aquí la radicación de su
+                        nombre, lo que implica que entre dos llamadas cualesquiera, el servicio pierde todos sus datos.
+                        Es considerada una técnica de arquitectura de software, es decir, un conjunto de principios y
+                        patrones de comunicación que ayudan a crear una forma de pensar y construir las APIs. Este tipo
+                        de arquitectura se define por un conjunto de restricciones entre los elementos, componentes,
+                        conectores y datos usados. (jeferson, 2019)
+
+                        <h3>SOAP</h3>
+
+                        SOAP es un estándar basado en XML para la transmisión de mensajes en HTTP y otros protocolos de
+                        Internet. Es un protocolo ligero para el intercambio de información en un entorno
+                        descentralizado y distribuido. Se basa en XML y consta de tres partes:
+                        Un sobre que define una infraestructura para describir el contenido del mensaje y cómo
+                        procesarlo.
+                        Un conjunto de normas de codificación para expresar instancias de tipos de datos definidos por
+                        la aplicación.
+                        Una convención para representar llamadas y respuestas a procedimiento remoto.
+                        SOAP permite el enlace y la utilización de servicios Web encontrados definiendo una ruta de
+                        mensaje para el direccionamiento de mensajes. Se puede utilizar SOAP para consultar UDDI para
+                        servicios Web. (IBM, 2024)
+
+                        <h3>OpenAPI</h3>
+
+                        OpenAPI es un estándar para la descripción de las interfaces de programación, o application
+                        programming interfaces (API). La especificación OpenAPI define un formato de descripción abierto
+                        e independiente de los fabricantes para los servicios de API. En particular, OpenAPI puede
+                        utilizarse para describir, desarrollar, probar y documentar las API compatibles con REST.
+                        La actual especificación OpenAPI surgió del proyecto predecesor Swagger. La empresa de
+                        desarrollo SmartBear sometió la especificación existente de Swagger a una licencia abierta y
+                        dejó el mantenimiento y desarrollo posterior en manos de la iniciativa OpenAPI. Además de
+                        SmartBear, entre los miembros de la iniciativa OpenAPI se encuentran gigantes de la industria
+                        como Google, IBM y Microsoft. La Fundación Linux también apoya este proyecto. (IONOS, 2022)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Plataformas Tecnológicas</h2>
+            <div class="content">
+                <img src="imagenes/imagen5.jpg" alt="">
+                <div class="text">
+                    <p>
+                        <h3>Amazon Web Services (AWS)</h3>
+
+                        es la nube más adoptada y completa en el mundo, que ofrece más de 200
+                        servicios integrales de centros de datos a nivel global. Millones de clientes, incluso las
+                        empresas emergentes que crecen más rápido, las compañías más grandes y los organismos
+                        gubernamentales líderes, están usando AWS para reducir los costos, aumentar su agilidad e
+                        innovar de forma más rápida. (AWS, 2024)
+
+                        <h3>Google Cloud</h3>
+
+                        Google Cloud Platform se trata de la suite de infraestructuras y servicios que Google utiliza a
+                        nivel interno y, ahora, disponible para cualquier empresa, de tal forma que sea aplicable a
+                        multitud de procesos empresariales.
+                        Cuando hablamos de Google Cloud Platform (GCP), estamos ante todas las herramientas de Google
+                        disponibles en la nube que hasta ahora se ofrecían por separado. Este conjunto de servicios
+                        ofrecen prestaciones muy dispares; desde machine learning hasta Inteligencia artificial pasando
+                        por el big data, todo englobado bajo el paraguas del cloud computing. (ordorica, 2020)
+
+                        <h3> Microsoft Azure</h3>
+
+                        Microsoft Azure es una plataforma de pago por uso que integra servicios completos en la nube
+                        pública para que desarrolladores y equipos de TI administren e implementen aplicaciones y otros
+                        recursos a través de un gran centro de datos mundial (Conzultek, s.f.)
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <h2>Seguridad e Interoperabilidad</h2>
+            <div class="content">
+                <img src="imagenes/imagen6.jpg" alt="">
+                <div class="text">
+                    <p>
+                    <h3>Encriptación de Datos</h3>
+
+                    El encriptado es uno de los pilares fundamentales de la ciberseguridad y sirve para proteger los
+                    datos y evitar que se roben, cambien o se vulneren. Para ello, descifra datos en un código
+                    secreto que solo se puede desbloquear con una clave digital única. Los datos encriptados pueden
+                    protegerse mientras están en reposo en ordenadores, en tránsito entre ellos o mientras se
+                    procesan, independientemente de si esos ordenadores se encuentran en entornos on‐premise o en
+                    servidores en la nube remotos. (Google cloud, 2024)
+
+                    <h3>Autenticación</h3>
+
+                    La autenticación multifactor (MFA) es un proceso de registro en varios pasos que requiere que
+                    los usuarios ingresen algo más de información que simplemente una contraseña. Por ejemplo, junto
+                    con la contraseña, los usuarios deberán ingresar un código que se envía a su correo electrónico,
+                    responder a una pregunta secreta o escanear una huella dactilar. Una segunda forma de
+                    autenticación puede ayudar a evitar el acceso no autorizado a una cuenta si la contraseña del
+                    sistema se ha visto expuesta. (aws, 2022)
+                    La seguridad digital es fundamental en el mundo de hoy, ya que tanto empresas como usuarios
+                    almacenan información confidencial en línea. Todo el mundo interactúa con aplicaciones,
+                    servicios y datos que se almacenan en Internet mediante cuentas en línea. Una filtración o mal
+                    uso de esta información en línea puede tener consecuencias graves en el mundo real, como un robo
+                    financiero, una interrupción de la actividad empresarial o la pérdida de privacidad. (aws, 2022)
+
+                    <h3>Firewalls</h3>
+
+                    Los firewalls de nube pública son dispositivos virtuales de seguridad de red implementados en la
+                    nube pública. Como regla general, los firewalls de nube pública suelen ofrecen capacidades
+                    similares a las de los firewalls de hardware. Sin embargo, en implementaciones de nube híbrida,
+                    los firewalls de nube pública ofrecen ventajas significativas en comparación con los
+                    dispositivos locales en cuanto a escalabilidad, disponibilidad y extensibilidad. A veces
+                    llamados “firewalls virtuales”, estos dispositivos se conocen como “firewalls de nube pública”
+                    cuando se usan en esos entornos. (paloalto, s.f.)
+
+                    <h3>Interoperabilidad</h3>
+
+                    La interoperabilidad en la nube se refiere a la capacidad de diferentes sistemas, aplicaciones o
+                    plataformas en la nube para comunicarse, compartir datos y trabajar de manera conjunta de manera
+                    efectiva. En un entorno de computación en la nube, donde hay una variedad de proveedores y
+                    tecnologías, la interoperabilidad es crucial para garantizar que los servicios y las
+                    aplicaciones puedan funcionar sin problemas juntos, sin importar quién los haya desarrollado o
+                    dónde se ejecuten. (bismart, s.f.)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
